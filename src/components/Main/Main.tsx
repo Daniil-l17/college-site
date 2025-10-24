@@ -1,26 +1,13 @@
-import Hero from "@/components/Main/components/Hero";
-import Videos from "@/components/Main/components/Videos";
-import Gallery from "@/components/Main/components/Gallery";
-import YandexMap from "@/components/YandexMap";
-import Quiz from "@/components/Main/components/Quiz";
-
+import Hero from '@/components/Main/components/Hero/Hero.view';
+import Gallery from '@/components/Main/components/Gallery/Gallery.view';
+import Footer from '@/components/Footer/Footer.view';
 
 export default function Main() {
-  return (
-    <main className="max-w-[100vw]">
-      <Hero />
-      <section id="content-wrap" className="relative">
-        <section id="videos" className="mx-auto max-w-7xl px-2">
-          <Videos />
-        </section>
-        <YandexMap />
-        <section id="quiz">
-          <Quiz />
-        </section>
-        <Gallery />
-      </section>
-    </main>
-  );
+	return (
+		<main className='max-w-[100vw]'>
+			<Hero />
+			<Gallery />
+			<Footer />
+		</main>
+	);
 }
-
-
