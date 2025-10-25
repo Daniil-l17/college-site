@@ -70,30 +70,23 @@ export default function Gallery() {
 
 			{selectedImage && (
 				<div
-					className='fixed bg-black/90 backdrop-blur-sm z-[9999] flex items-center justify-center cursor-pointer'
+					className='fixed inset-0 bg-black/90 backdrop-blur-sm z-[9999] flex items-center justify-center p-8 cursor-pointer'
 					style={{
 						top: 0,
 						left: 0,
 						right: 0,
 						bottom: 0,
 						width: '100vw',
-						height: '100dvh',
-						paddingTop: 'env(safe-area-inset-top)',
-						paddingBottom: 'env(safe-area-inset-bottom)',
-						paddingLeft: 'env(safe-area-inset-left)',
-						paddingRight: 'env(safe-area-inset-right)'
+						height: '100vh',
+						position: 'fixed'
 					}}
 					onClick={() => setSelectedImage(null)}
 				>
-					<div className='relative w-full h-full flex items-center justify-center cursor-default' onClick={e => e.stopPropagation()} style={{ padding: '2rem' }}>
+					<div className='relative w-full h-full flex items-center justify-center cursor-default' onClick={e => e.stopPropagation()}>
 						<Image src={selectedImage} alt='Увеличенное изображение' width={1200} height={800} className='rounded-2xl shadow-2xl max-w-full max-h-full object-contain' />
 						<button
 							onClick={() => setSelectedImage(null)}
-							className='absolute w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors cursor-pointer'
-							style={{
-								top: 'max(2rem, env(safe-area-inset-top, 0px) + 1rem)',
-								right: 'max(2rem, env(safe-area-inset-right, 0px) + 1rem)'
-							}}
+							className='absolute top-8 right-8 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors cursor-pointer'
 						>
 							<svg className='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
 								<path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M6 18L18 6M6 6l12 12' />
