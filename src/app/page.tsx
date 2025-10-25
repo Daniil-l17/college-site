@@ -7,6 +7,7 @@ export default function Home() {
 		<div id='top' className='font-sans min-h-screen'>
 			<Header />
 			<Main />
+			<Footer />
 		</div>
 	);
 }

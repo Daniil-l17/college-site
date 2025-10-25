@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://life-it-top-college.ru/sitemap.xml
+
+Crawl-delay: 1
+
+Allow: /images/
+
+Disallow: /_next/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$

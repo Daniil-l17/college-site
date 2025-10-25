@@ -110,7 +110,7 @@ body {
   cursor: zoom-in;
 }
 
-/* Эффект поднятия кнопок при наведении */
+
 .button-lift {
   transition:
     transform 0.3s ease,
@@ -122,7 +122,7 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Анимированный градиент для заголовка */
+
 .animated-gradient {
   background: linear-gradient(-45deg, #6366f1, #14b8a6, #8b5cf6, #a855f7, #06b6d4, #10b981);
   background-size: 400% 400%;
