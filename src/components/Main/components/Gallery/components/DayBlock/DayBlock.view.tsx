@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { useInView } from 'react-intersection-observer';
-import Image3D from '../../../Image3D/Image3D.view';
+import Image3D from '../Image3D/Image3D.view';
 import { DayBlockProps } from './DayBlock.typed';
 
 export default function DayBlock({ day, index, onImageClick }: DayBlockProps) {
@@ -27,16 +27,16 @@ export default function DayBlock({ day, index, onImageClick }: DayBlockProps) {
 			gsap.to(blockRef.current.querySelector('.day-image'), {
 				x: 0,
 				opacity: 1,
-				duration: 1.2,
+				duration: 1,
 				ease: 'power3.out'
 			});
 
 			gsap.to(blockRef.current.querySelector('.day-content'), {
 				x: 0,
 				opacity: 1,
-				duration: 1.2,
+				duration: 1,
 				ease: 'power3.out',
-				delay: 0.4
+				delay: 0.2
 			});
 		}
 	}, [inView, index]);

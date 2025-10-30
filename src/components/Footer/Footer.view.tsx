@@ -1,6 +1,6 @@
 export default function Footer() {
 	return (
-		<footer id='contacts' className='bg-white border-t border-black/10'>
+		<footer id='contacts' className='border-t border-black/10'>
 			<div className='mx-auto max-w-6xl px-4 py-10 grid md:grid-cols-2 gap-8 text-sm'>
 				<div>
 					<div className='text-lg font-semibold'>IT-TOP College</div>

@@ -1,10 +1,10 @@
 import Header from '@/components/Header/Header.view';
-import Main from '@/components/Main/Main';
+import Main from '@/components/Main/Main.view';
 import Footer from '@/components/Footer/Footer.view';
 
 export default function Home() {
 	return (
-		<div id='top' className='font-sans min-h-screen'>
+		<div id='top' className='min-h-screen'>
 			<Header />
 			<Main />
 			<Footer />

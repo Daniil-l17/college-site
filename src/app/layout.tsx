@@ -19,6 +19,9 @@ export const metadata: Metadata = {
 	authors: [{ name: 'Лукьнов Даниил' }, { name: 'Слепушкина Екатерина' }],
 	creator: 'Лукьнов Даниил, Слепушкина Екатерина',
 	publisher: 'College Digest',
+	icons: {
+		icon: '/favicon.ico'
+	},
 	formatDetection: {
 		email: false,
 		address: false,
