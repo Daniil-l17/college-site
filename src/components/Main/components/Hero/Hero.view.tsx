@@ -52,7 +52,7 @@ export default function Hero() {
 				<div className='mt-8 text-center'>
 					<p className='hero-credit-title text-sm md:text-base text-neutral-500'>Создание сайта осуществляли</p>
 					<p className='hero-credit-names mt-2 text-base md:text-lg text-neutral-700'>
-						<span className='font-semibold text-gradient'>Лукьнов Даниил</span> и <span className='font-semibold text-gradient'>Слепушкина Екатерина</span>
+						<span className='font-semibold text-gradient'>Лукьянов Даниил</span> и <span className='font-semibold text-gradient'>Слепушкина Екатерина</span>
 					</p>
 				</div>
 			</div>

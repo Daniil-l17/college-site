@@ -18,7 +18,7 @@ export default function Footer() {
 				</div>
 			</div>
 			<div className='mx-auto max-w-6xl px-4 pb-8'>
-				<p className='text-center text-xs text-neutral-500'>Создание сайта осуществляли Лукьнов Даниил и Слепушкина Екатерина</p>
+				<p className='text-center text-xs text-neutral-500'>Создание сайта осуществляли Лукьянов Даниил и Слепушкина Екатерина</p>
 			</div>
 		</footer>
 	);
