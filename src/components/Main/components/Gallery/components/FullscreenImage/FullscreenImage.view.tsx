@@ -20,7 +20,7 @@ const FullscreenImage: React.FC<FullscreenImageProps> = ({ imageSrc, onClose }) 
 				right: 0,
 				bottom: 0,
 				width: '100vw',
-				height: '100vh',
+				height: '100dvh',
 				position: 'fixed'
 			}}
 			onClick={handleClose}

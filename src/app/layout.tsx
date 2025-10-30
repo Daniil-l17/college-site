@@ -109,6 +109,7 @@ export default function RootLayout({
 			<head>
 				<meta name='yandex-verification' content='c53e0936303a3a0f' />
 				<meta name='google-site-verification' content='JKPPbVVYmo67LyGK8vikLWL_0MQWd2-kgP9Fe-V1Rkc' />
+				<meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover'></meta>
 				<script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 			</head>
 			<body className={`${manrope.variable} antialiased`}>
