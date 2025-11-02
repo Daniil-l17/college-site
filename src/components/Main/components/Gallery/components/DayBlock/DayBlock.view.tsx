@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { useInView } from 'react-intersection-observer';
 import Image3D from '../Image3D/Image3D.view';
@@ -11,33 +11,33 @@ export default function DayBlock({ day, index, onImageClick }: DayBlockProps) {
 		triggerOnce: true
 	});
 
-	useEffect(() => {
-		if (inView && blockRef.current) {
+	useLayoutEffect(() => {
+		if (blockRef.current) {
 			const isEven = index % 2 === 0;
-
-			gsap.set(blockRef.current.querySelector('.day-image'), {
-				x: isEven ? -80 : 80,
-				opacity: 0
-			});
-			gsap.set(blockRef.current.querySelector('.day-content'), {
-				x: isEven ? 80 : -80,
-				opacity: 0
-			});
-
-			gsap.to(blockRef.current.querySelector('.day-image'), {
-				x: 0,
-				opacity: 1,
-				duration: 1,
-				ease: 'power3.out'
-			});
-
-			gsap.to(blockRef.current.querySelector('.day-content'), {
-				x: 0,
-				opacity: 1,
-				duration: 1,
-				ease: 'power3.out',
-				delay: 0.2
-			});
+			if (!inView) {
+				gsap.set(blockRef.current.querySelector('.day-image'), {
+					x: isEven ? -80 : 80,
+					opacity: 0
+				});
+				gsap.set(blockRef.current.querySelector('.day-content'), {
+					x: isEven ? 80 : -80,
+					opacity: 0
+				});
+			} else {
+				gsap.to(blockRef.current.querySelector('.day-image'), {
+					x: 0,
+					opacity: 1,
+					duration: 1,
+					ease: 'power3.out'
+				});
+				gsap.to(blockRef.current.querySelector('.day-content'), {
+					x: 0,
+					opacity: 1,
+					duration: 1,
+					ease: 'power3.out',
+					delay: 0.2
+				});
+			}
 		}
 	}, [inView, index]);
 
