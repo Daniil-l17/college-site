@@ -4,10 +4,13 @@ import Footer from '@/components/Footer/Footer.view';
 
 export default function Home() {
 	return (
-		<div id='top' className='min-h-screen'>
+		<>
+			<div id='top' style={{ position: 'absolute', top: 0, height: 0 }} />
 			<Header />
-			<Main />
-			<Footer />
-		</div>
+			<div style={{ paddingTop: 'var(--header-height, 73px)' }}>
+				<Main />
+				<Footer />
+			</div>
+		</>
 	);
 }
