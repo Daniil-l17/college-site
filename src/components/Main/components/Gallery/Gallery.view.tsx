@@ -61,7 +61,7 @@ export default function Gallery() {
 					<p className='text-xl text-gray-600'>Каждый день в нашем колледже наполнен событиями и открытиями</p>
 				</div>
 
-				<div className='space-y-24 overflow-hidden'>
+				<div className='space-y-24'>
 					{octoberDays.map((day, index) => (
 						<DayBlock key={index} day={day} index={index} onImageClick={setSelectedImage} />
 					))}
