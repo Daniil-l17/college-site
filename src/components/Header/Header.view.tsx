@@ -1,6 +1,6 @@
 export default function Header() {
 	return (
-		<header className='fixed top-0 left-0 right-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-black/10' style={{ height: 'var(--header-height, 73px)' }}>
+		<header className='sticky top-0 left-0 right-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-black/10'>
 			<div className='mx-auto max-w-6xl px-4 py-4 flex items-center justify-between'>
 				<a href='#top' className='text-xl font-semibold tracking-tight text-gradient cursor-pointer'>
 					IT-TOP College

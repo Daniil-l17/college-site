@@ -36,12 +36,10 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
   color: var(--foreground);
-  overflow-x: hidden;
   font-family:
     var(--font-manrope),
     Arial,

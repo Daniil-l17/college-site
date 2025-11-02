@@ -5,9 +5,9 @@ import Footer from '@/components/Footer/Footer.view';
 export default function Home() {
 	return (
 		<>
-			<div id='top' style={{ position: 'absolute', top: 0, height: 0 }} />
+			<div id='top' />
 			<Header />
-			<div style={{ paddingTop: 'var(--header-height, 73px)' }}>
+			<div className='overflow-x-hidden'>
 				<Main />
 				<Footer />
 			</div>
